@@ -1,1 +1,67 @@
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
+local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+--------------------------------------------------------------------------------------------------------------------------------------------
+local Window = Fluent:CreateWindow({
+    --ai skid thì nhớ đổi tên =)
+    --táo hub , aniee hub :>
+    Title = " delta x",
+    SubTitle = "Version 2",
+    TabWidth = 160,
+    Size = UDim2.fromOffset(530, 350),
+    Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
+    Theme = "Darker",
+    MinimizeKey = Enum.KeyCode.End -- Used when theres no MinimizeKeybind
+});
+local v16 = {
+    Home = v15:AddTab({
+        Title = "Thông Tin"
+    }),
+    Main = v15:AddTab({
+        Title = "Cày"
+    }),
+    Sea = v15:AddTab({
+        Title = "Sự Kiện"
+    }),
+    ITM = v15:AddTab({
+        Title = "Vật Phẩm"
+    }),
+    Setting = v15:AddTab({
+        Title = "Cài Đặt"
+    }),
+    Status = v15:AddTab({
+        Title = "Máy Chủ"
+    }),
+    Stats = v15:AddTab({
+        Title = "Chỉ Số"
+    }),
+    Player = v15:AddTab({
+        Title = "Người Chơi"
+    }),
+    Teleport = v15:AddTab({
+        Title = "Dịch Chuyển"
+    }),
+    Visual = v15:AddTab({
+        Title = "Giả"
+    }),
+    Fruit = v15:AddTab({
+        Title = "Trái"
+    }),
+    Raid = v15:AddTab({
+        Title = "Tập Kích"
+    }),
+    Race = v15:AddTab({
+        Title = "Tộc"
+    }),
+    Shop = v15:AddTab({
+        Title = "Cửa Hàng"
+    }),
+    Misc = v15:AddTab({
+        Title = "Khác"
+    })
+}
+local Options = Fluent.Options
+do
+--------------------------------------------------------------------------------------------------------------------------------------------
 
+------------------------------------------------------------------------------------------------------------------------------------------
